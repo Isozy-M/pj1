@@ -1,0 +1,176 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.head{
+    display: flex;
+    align-items: center;
+    padding: 15px 75px;
+    justify-content: space-between;
+    background-color: White;
+}
+.logo{
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.6s ease-in-out;
+}
+.logo:hover{
+    transform: rotate3d(0, 1, 2, 360deg);
+}
+.logo a{
+    text-decoration: none;
+    display:block;
+    color:black;
+}    
+.green{
+    color: greenyellow;
+}
+.search-box{
+    display: flex;
+    border: 1px solid #ddd;
+    background-color: white;
+}
+.search-box input{
+    padding: 12px;
+    border: none;
+    width: 250px;
+}
+.search-box select{
+    padding: 12px;
+    border: none;
+}
+.search-box button{
+    border: none;
+    background-color: white;
+    padding: 12px;
+    cursor: pointer;
+}
+.right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav li {
+  margin-right: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+nav li:hover{
+    transform: scale(1.1);
+    letter-spacing: 1px;
+}
+.cart-icon {
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+nav{
+  background-color:white;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 75px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000;
+  box-shadow: 0 5px 20px -10px rgba(0,0,0,0.3);
+}
+.form-title{
+  font-size: 35px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #7bbd1e;
+  letter-spacing: 1px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+}
+.form-section {
+  flex: 2;
+}
+.contact-box {
+  flex: 1;
+  padding: 80px 20px 60px;
+  margin-top: 60px;
+  height: 350px;
+}
+.box-title {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: bolder;
+  margin-top: 13px;
+}
+.form-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.form-grid input {
+  width: calc(50% - 5px);
+  padding: 22px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.form-grid textarea {
+  width: 100%;
+  padding: 22px;
+  box-sizing: border-box;
+  font-size: 16px;
+  height: 180px;
+}
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+
+}
+.nut {
+  background: #7bbd1e;
+  color: white;
+  margin-top: 40px;
+  cursor: pointer;
+  width : 200px;
+  height : 60px;
+  border: none;
+  font-size: 20px;
+}
+.contact-box {
+  background: #7bbd1e;
+  color:white;
+  padding: 30px;
+  border-radius: 5px;
+}
+.contact-item {
+  display: flex;
+  align-items: center;   
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a{
+  text-decoration: none;
+}

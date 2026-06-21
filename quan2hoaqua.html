@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel ="stylesheet" href ="quanhoaqua.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="giohang.css">
+    <link rel="stylesheet" href="thanhtoan.css">
+</head>
+<body>
+    <script src="giohang.js"></script>
+    <script src="thanhtoan.js"></script>
+    <script src="timKiemquan.js"></script>
+<header class="head">
+        <div class="logo">
+            <a href="btl.html"><span class="green">Fr</span>uit</a>
+        </div>
+        <div class="search-box">
+            <select onchange="if(this.value) window.location.href=this.value;">
+                <option value="">Select Category</option>
+                <option value="vdd.html">Vegetables</option>
+                <option value="quan2hoaqua.html">Fruits</option>
+                <option value="card-container.html">Root & Fruit Vegetables</option>
+                <option value="quan3giavi.html">Herb & Spices</option>
+            </select>   
+            <input type="text"  id="ndtim" placeholder="Search Products..." onkeyup="timkiem()">
+            <button>🔍</button>
+        </div>
+    <div class="right">
+        <span class="phone">📞 +91 235 548 7548</span>
+        <span class="help">❓ Help & More</span>
+        <span><a href="profile.html">👤</a></span>
+    </div>
+</header>
+    <nav>
+        <ul>
+            <li><a href="btl.html">Home</a></li>  
+            <li><a href="btl.html#about">About Us</a></li>
+            <li><a href="btl.html#blog">Blog</a></li>
+            <li><a href="vd.html">Shop</a></li>
+            <li><a href="btl.html#contact">Contact Us</a></li>
+    
+        </ul>
+        <div class="cart-icon"> 🛒</div>
+    </nav>
+    <section  class = "anh_hang_ ">
+      <div class="card" data-aos="fade-up">
+         <img src = "https://product.hstatic.net/1000282430/product/le-nam-phi-.jpg">  
+          <h3> Lê Nam Phi 300gr </h3>  
+          <p> 25.000 VND </p>
+          <button data-ten="LÊ Nam Phi 300gr" data-gia="25000" onclick="themVaoGio(this)"> Mua Ngay </button>
+      </div>
+      <div class="card" data-aos="fade-up">
+          <img src ="https://cdn.tgdd.vn/Products/Images/8788/226931/bhx/dua-luoi-tron-ruot-cam-202401051458158510.jpg">
+          <h3> Dưa Lưới 1kg</h3>
+          <p>80.000 VND</p>
+          <button data-ten="Dưa Lưới 1kg" data-gia="80000" onclick="themVaoGio(this)">Mua Ngay </button>
+      </div>   
+      <div class ="card" data-aos="fade-up"> 
+          <img src="https://cdn.tgdd.vn/Products/Images/8788/319004/bhx/dau-tay-giong-my-hop-250g-19-22-trai-202311300936283791.jpeg" >
+          <h3> Dâu Tây  300gr </h3>
+          <p>80.000 VND </p>
+          <button data-ten="Dâu Tây 300gr" data-gia="80000" onclick="themVaoGio(this)"> Mua Ngay </button>
+       </div>
+     <div class="card" data-aos="fade-up"> 
+         <img src ="https://product.hstatic.net/1000141988/product/tao_xanh_granny_smith_my_size_90_-_100_2989ea86640d44b18f5351023fd408b2_large.png">
+         <h3> Táo Xanh Mỹ 300gr </h3>
+         <p> 200.000 VND  </p>
+         <button data-ten="Táo Xanh Mỹ 300gr" data-gia="200000" onclick="themVaoGio(this)"> Mua Ngay </button>     
+     </div>
+      <div class="card" data-aos="fade-up">
+          <img src = "https://traicaynhapkhausach.vn/upload/sanpham/large/nho-den-uc-khong-hat-005-15-0.jpg" >  
+          <h3> Nho Đen Úc 300gr </h3>  
+          <p> 110.000 VND </p>
+          <button data-ten="Nho Đen Úc 300gr" data-gia="110000" onclick="themVaoGio(this)"> Mua Ngay </button>  
+      </div>
+      <div class="card" data-aos="fade-up">
+          <img src ="https://cdn.tgdd.vn/Products/Images/8788/234051/bhx/cam-vang-valencia-nhap-khau-uc-202312081340563294.jpg">
+          <h3> Cam Vàng 400gr </h3>
+          <p>69.000 VND</p>
+          <button data-ten="Cam Vàng 400gr" data-gia="69000" onclick="themVaoGio(this)">Mua Ngay </button>
+      </div>   
+      <div class ="card" data-aos="fade-up"> 
+         <img src="https://cdn.tgdd.vn/Products/Images/8788/222883/bhx/dua-le-trang-202402211617185133.jpg" >
+          <h3> Dưa Lê  150gr </h3>
+          <p>53.000 VND </p>
+          <button data-ten="Dưa Lê 150gr" data-gia="53000" onclick="themVaoGio(this)"> Mua Ngay </button>
+       </div>
+       <div class="card" data-aos="fade-up"> 
+         <img src ="https://product.hstatic.net/1000141988/product/buoi_da_xanh_1.1_05f64133a27848a8840413cd152e80d4_large.png">
+          <h3> Bưởi Da Xanh 1.5Kg  </h3>
+          <p> 132.000 VND  </p>
+          <button data-ten="Bưởi Da Xanh 1.5Kg" data-gia="132000" onclick="themVaoGio(this)"> Mua Ngay </button>     
+        </div>
+      <div class="card" data-aos="fade-up">
+         <img src = " https://product.hstatic.net/1000141988/product/sau_rieng_com_huynh_lam_a8fa8343727b4dc1ab2e135266ac6cfd_large.jpg">  
+          <h3> Sầu Riêng  800gr </h3>  
+          <p> 130.000 VND </p>
+          <button data-ten="Sầu Riêng 800gr" data-gia="130000" onclick="themVaoGio(this)"> Mua Ngay </button>  
+      </div>
+      <div class="card" data-aos="fade-up">
+          <img src ="https://product.hstatic.net/200000423303/product/xoai-cat-hoa-loc-chin-tui-1kg-1-3-trai-202211171439042124_c3ddfdf7d18f4a11be3d8457ac79d2b2.jpg">
+          <h3> Xoài Cát Hòa Lộc 1kg </h3>
+          <p>100.000 VND</p>
+          <button data-ten="Xoài Cát Hòa Lộc 1kg" data-gia="100000" onclick="themVaoGio(this)">Mua Ngay </button>
+      </div>   
+      <div class ="card" data-aos="fade-up">
+         <img src="https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2025/9/19/photo-1758284595958-17582845963241340900449.png" >
+          <h3> Ổi  150gr </h3>
+          <p>58.000 VND </p>
+          <button data-ten="Ổi 150gr" data-gia="58000" onclick="themVaoGio(this)"> Mua Ngay </button>
+       </div>
+     <div class="card" data-aos="fade-up"> 
+      <img src ="https://lh4.googleusercontent.com/proxy/b8MExwzu_NT_DyYFjbK6n7npaGujfyBtYHpF5UFE9BB6-qyg-eBoVkCxPEqpaP-msaEO3a1hBfyEHSMNa5NngjJPdUZdPSS0YvTERzMqwQ">
+      <h3> Dừa Xiêm / 1 quả  </h3>
+      <p> 30.000 VND  </p>
+      <button data-ten="Dừa Xiêm 1 quả" data-gia="30000" onclick="themVaoGio(this)"> Mua Ngay </button>     
+     </div>
+      <div class="card" data-aos="fade-up">
+         <img src = "https://cdn.hstatic.net/products/1000141988/v__s_a_t_m_x_a_vietgap_1b166bf4c184461f84fee2a94f9f60ce_master.png">  
+          <h3> Vúa Sữa Tím 500gr  </h3>  
+          <p> 55.000 VND </p>
+          <button data-ten="Vúa Sữa Tím 500gr" data-gia="55000" onclick="themVaoGio(this)"> Mua Ngay </button>  
+      </div>
+      <div class="card" data-aos="fade-up">
+          <img src ="https://www.locthanhan.vn/upload/sanpham/nhan-que-93.jpg">
+          <h3> Nhãn  500gr </h3>
+          <p>40.000 VND</p>
+          <button data-ten="Nhãn 500gr" data-gia="40000" onclick="themVaoGio(this)">Mua Ngay </button>
+      </div>   
+      <div class ="card" data-aos="fade-up"> 
+         <img src="https://cdn.tgdd.vn/Products/Images/8788/306411/bhx/mang-cut-thai-lan-202304261052378710.jpg">
+          <h3> Măng Cụt 200gr </h3>
+          <p>94.000 VND </p>
+          <button data-ten="Măng Cụt 200gr" data-gia="94000" onclick="themVaoGio(this)"> Mua Ngay </button>
+       </div>
+     <div class="card" data-aos="fade-up" > 
+    <img src ="https://product.hstatic.net/1000141988/product/dua_md2_8bffaf647acc467aad5007c828311b27_large.png">
+      <h3> Rứa 200gr </h3>
+      <p> 55.000 VND  </p>
+      <button data-ten="Rứa 200gr" data-gia="55000" onclick="themVaoGio(this)"> Mua Ngay </button>  
+      </div>
+      <div class="card" data-aos="fade-up">
+         <img src = "https://hoptacxathanhbinh.com/wp-content/uploads/2023/08/rambutan.png">  
+          <h3> Chôm Chôm  300gr </h3>  
+          <p> 60.000 VND </p>
+          <button data-ten="Chôm Chôm 300gr" data-gia="60000" onclick="themVaoGio(this)"> Mua Ngay </button>  
+      </div>
+      <div class="card" data-aos="fade-up">
+          <img src ="https://product.hstatic.net/1000282430/product/du-du-do_a925cf1dca944fa5aea5fafa75c85656.jpg">
+          <h3> Đu Đủ 1kg  </h3>
+          <p>59.000 VND</p>
+          <button data-ten="Đu Đủ 1kg" data-gia="59000" onclick="themVaoGio(this)"> Mua Ngay </button>
+      </div>   
+      <div class ="card" data-aos="fade-up"> 
+         <img src="https://dalatfarm.net/wp-content/uploads/2025/07/hong-kem-treo-gio.jpg" >
+          <h3> Hồng Treo Gió 300gr </h3>
+          <p> 210.000 VND </p>
+          <button data-ten="Hồng Treo Gió 300gr" data-gia="210000" onclick="themVaoGio(this)"> Mua Ngay </button>
+       </div>
+     <div class="card" data-aos="fade-up"> 
+    <img src ="https://product.hstatic.net/1000282430/product/seedless-watermelon-around-2.5kg-whole-fruit_23a860613aa94413aca16b9d766f6291_grande.jpg">
+      <h3> Dưa Hấu 300gr </h3>
+      <p> 27.000 VND  </p>
+      <button data-ten="Dưa Hấu 300gr" data-gia="27000" onclick="themVaoGio(this)"> Mua Ngay </button>   
+     </div>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dki.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container" data-aos="fade-up">
+         <div class="left">
+
+            <div class="text">
+                <h1>
+                Mua <br>
+                sắm <br>
+                thỏa <br>
+                thích <br>
+                cùng <br>
+                <span class="green">HotTea</span> <br>
+    
+                </h1>
+            </div>
+            
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOHL67Lr3xKb1LM9IWp7kXab3PYflxbkkGETf1j_vSzw&s=10" alt="">
+            </div>
+        <div class="right">
+                <form id="frm">
+                     <input type="text" placeholder="Email hoặc số di động">
+                     <input type="password" placeholder="Mật khẩu">
+                     <button type="button" class="nut" onclick="dangnhap()">Đăng nhập</button>
+                     <a href="quenpass.html">Quên mật khẩu?</a>
+                     <a class="nut2" id="btnOpenRegister" href="javascript:void(0)">Tạo tài khoản mới</a>
+                </form>
+                <script>
+                    function dangnhap(){
+                        alert("🎉 Chào mừng đến với HotTea Greengrocer's");
+                        window.location.href = "btl.html"; 
+                    } 
+                </script>
+        </div>    
+
+     </div>
+
+    </div>
+     <div class="modal-overlay" id="modal-overlay">
+        
+        <div class="modal-box">
+            
+            <span class="close-btn" id="close-btn">&times;</span>
+            
+            <h2>THÔNG TIN CÁ NHÂN</h2>
+
+<form id="registerForm">
+    <div class="input-group">
+        <label>Họ <span class="required">*</span></label>
+        <input type="text" name="ho" placeholder="Họ" required> 
+    </div>
+
+    <div class="input-group">
+        <label>Tên <span class="required">*</span></label>
+        <input type="text" name="ten" placeholder="Tên" required>
+    </div>
+
+    <div class="input-group">
+        <label>Số điện thoại <span class="required">*</span></label>
+        <input type="tel" name="sdt" placeholder="Số điện thoại" required>
+    </div>
+
+    <div class="input-group">
+        <label id="email">Email <span class="required">*</span></label>
+        <input type="email" name="email" placeholder="Email" required>
+    </div>
+
+    <div class="input-group">
+        <label>Mật khẩu <span class="required">*</span></label>
+        <input type="password" name="mat_khau" placeholder="Mật khẩu" required>
+    </div>
+
+    <button type="submit" class="btn-submit">Đăng ký</button>
+</form>
+        </div>
+
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script>
+const modal = document.getElementById('modal-overlay');
+const btnOpen = document.getElementById('btnOpenRegister'); 
+const btnClose = document.getElementById('close-btn');
+btnOpen.onclick = function() {
+    modal.style.display = "flex";
+}
+btnClose.onclick = function() {
+    modal.style.display = "none";
+}
+document.querySelector('#modal-overlay form').addEventListener('submit', function(e) {
+    e.preventDefault(); 
+    const ho = document.querySelector('input[placeholder="Họ"]').value;
+    const ten = document.querySelector('input[placeholder="Tên"]').value;
+    const sdt = document.querySelector('input[placeholder="Số điện thoại"]').value;
+    const email = document.querySelector('input[placeholder="Email"]').value;
+    const mat_khau = document.querySelector('input[placeholder="Mật khẩu"]').value;
+
+    const newUser = { ho, ten, sdt, email, mat_khau };
+    
+    let danhSachUser = JSON.parse(localStorage.getItem('users')) || [];
+
+    const emailDaTonTai = danhSachUser.some(user => user.email === email);
+    if (emailDaTonTai) {
+        alert('❌ Email này đã được đăng ký tài khoản!');
+        return;
+    }
+
+    danhSachUser.push(newUser);
+
+    localStorage.setItem('users', JSON.stringify(danhSachUser));
+
+    alert('🎉 Đăng ký tài khoản thành công vào Local Storage!');
+    document.getElementById('modal-overlay').style.display = "none";
+    this.reset(); // Xóa dữ liệu cũ trên form
+});
+function dangnhap() {
+    const inputs = document.querySelectorAll('#frm input');
+    const taiKhoanNhap = inputs[0].value;
+    const matKhauNhap = inputs[1].value;
+
+    const danhSachUser = JSON.parse(localStorage.getItem('users')) || [];
+
+    const userHopLe = danhSachUser.find(user => 
+        (user.email === taiKhoanNhap || user.sdt === taiKhoanNhap) && user.mat_khau === matKhauNhap
+    );
+
+    if (userHopLe) {
+        alert(`🎉 Chào mừng ${userHopLe.ten} đến với HotTea Greengrocer's`);
+        localStorage.setItem('currentUser', JSON.stringify(userHopLe)); // lưu thông tin tài khoản
+        window.location.href = "btl.html"; 
+    } else {
+        alert("❌ Tài khoản hoặc mật khẩu không chính xác!");
+    }
+}
+</script>
+</body>
+</html>

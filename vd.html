@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="vd.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="giohang.css">
+    <link rel="stylesheet" href="thanhtoan.css">
+</head>
+<body>
+    <script src="giohang.js"></script>
+    <script src="thanhtoan.js"></script>
+    <header class="head">
+        <div class="logo">
+            <a href="btl.html"><span class="green">Fr</span>uit</a>
+        </div>
+        <div class="search-box">
+            <select onchange="if(this.value) window.location.href=this.value;">
+                <option value="">Select Category</option>
+                <option value="vdd.html">Vegetables</option>
+                <option value="quan2hoaqua.html">Fruits</option>
+                <option value="card-container.html">Root & Fruit Vegetables</option>
+                <option value="quan3giavi.html">Herb & Spices</option>
+            </select>   
+            <input type="text"  id="ndtim" placeholder="Search Products..." onkeyup="timkiem()">
+            <button>🔍</button>
+        </div>
+    <div class="right">
+        <span class="phone">📞 +91 235 548 7548</span>
+        <span class="help">❓ Help & More</span>
+        <span><a href="profile.html">👤</a></span>
+    </div>
+</header>
+    <nav>
+        <ul>
+            <li><a href="btl.html">Home</a></li>  
+            <li><a href="btl.html#about">About Us</a></li>
+            <li><a href="btl.html#blog">Blog</a></li>
+            <li><a href="vd.html">Shop</a></li>
+            <li><a href="btl.html#contact">Contact Us</a></li>
+    
+        </ul>
+        <div class="cart-icon"> 🛒</div>
+    </nav>
+<section class="mhc">
+    <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://cdn.viva.org.uk/wp-content/uploads/2023/09/Greens-webp.webp'); background-repeat: no-repeat; background-size: cover;">
+        <a href="vdd.html">Vegetables</a>
+    </div>
+    <div class="card" style="background-repeat: no-repeat; background-size: cover; background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://www.epicgardening.com/wp-content/uploads/2024/10/A-close-up-shot-of-various-harvested-tubers-that-you-can-grow-root-vegetables.jpg');">
+        <a href="card-container.html">Root & Fruit Vegetables</a>
+    </div>
+    <div class="card" style="background-repeat: no-repeat; background-size: cover; background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://food.fnr.sndimg.com/content/dam/images/food/fullset/2021/09/27/all-the-fruits-cut-whole.jpg.rend.hgtvcom.1280.960.85.suffix/1632778035320.webp');">
+        <a href="quan2hoaqua.html">Fruits</a>
+    </div>
+    <div class="card" style="background-repeat: no-repeat; background-size: cover; background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://sukhis.com/app/uploads/2022/06/image2-1.jpg');">
+        <a href="quan3giavi.html">Herbs & Spices</a>
+    </div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</section>
+</body>
+</html>

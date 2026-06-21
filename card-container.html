@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cardstyle.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="timKiem.js">
+    <link rel="stylesheet" href="giohang.css">
+    <link rel="stylesheet" href="thanhtoan.css">
+</head>
+<body>
+    <script src="giohang.js"></script>
+    <script src="timKiem.js"></script>
+    <script src="thanhtoan.js"></script>
+    <body>
+<header class="head">
+        <div class="logo">
+            <a href="btl.html"><span class="green">Fr</span>uit</a>
+        </div>
+        <div class="search-box">
+            <select onchange="if(this.value) window.location.href=this.value;">
+                <option value="">Select Category</option>
+                <option value="vdd.html">Vegetables</option>
+                <option value="quan2hoaqua.html">Fruits</option>
+                <option value="card-container.html">Root & Fruit Vegetables</option>
+                <option value="quan3giavi.html">Herb & Spices</option>
+            </select>   
+            <input type="text"  id="ndtim" placeholder="Search Products..." onkeyup="timkiem()">
+            <button>🔍</button>
+        </div>
+    <div class="right">
+        <span class="phone">📞 +91 235 548 7548</span>
+        <span class="help">❓ Help & More</span>
+        <span><a href="profile.html">👤</a></span>
+    </div>
+</header>
+    <nav>
+        <ul>
+            <li><a href="btl.html">Home</a></li>  
+            <li><a href="btl.html#about">About Us</a></li>
+            <li><a href="btl.html#blog">Blog</a></li>
+            <li><a href="vd.html">Shop</a></li>
+            <li><a href="btl.html#contact">Contact Us</a></li>
+    
+        </ul>
+        <div class="cart-icon"> 🛒</div>
+    </nav>
+   <section class="card-container">
+        <div class="card" data-aos="fade-up">
+            <img src="https://cdnv2.tgdd.vn/bhx-static/bhx/Products/Images/8785/234529/bhx/ca-rot-1kg_202504140920251335.jpg">
+            <div class="sanpham">Cà Rốt</div>
+            <div class="gia">20.000đ/300g</div>
+           <div class="nut" data-ten="Cà Rốt" data-gia="20000" onclick="themVaoGio(this)">MUA</div>
+        </div>
+        <div class="card" data-aos="fade-up">
+            <img src="https://cdnv2.tgdd.vn/bhx-static/bhx/Products/Images/8785/230438/bhx/bi-do-tron-cat-san-1kg_202504140844256340.jpg">
+            <div class="sanpham">Bí Đỏ</div>
+            <div class="gia">15.000đ/500g</div>
+            <div class="nut" data-ten="Bí Đỏ" data-gia="15000" onclick="themVaoGio(this)">MUA</div>
+        </div>
+        <div class="card" data-aos="fade-up">
+            <img src="https://cdnv2.tgdd.vn/bhx-static/bhx/Products/Images/8785/233895/bhx/bi-xanh-tui-1kg_202507040912036256.jpg">
+            <div class="sanpham">Bí Xanh</div>
+            <div class="gia">8.500đ/500g</div>
+            <div class="nut" data-ten="Bí Xanh" data-gia="8500" onclick="themVaoGio(this)">MUA</div>
+        </div>
+        <div class="card" data-aos="fade-up">
+            <img src="https://cdnv2.tgdd.vn/bhx-static/bhx/Products/Images/8785/230451/bhx/dua-leo-vi-500g_202504140837297310.jpg">
+            <div class="sanpham">Dưa Leo</div>
+            <div class="gia">8.500đ/500g</div>
+            <div class="nut" data-ten="Dưa Leo" data-gia="8500" onclick="themVaoGio(this)">MUA</div>
+        </div>
+        <div class="card" data-aos="fade-up">
+            <img src="https://cdnv2.tgdd.vn/bhx-static/bhx/Products/Images/8785/334163/bhx/bong-cai-xanh-06-13kg_202504140939127749.jpg">
+            <div class="sanpham">Bông Cải Xanh</div>
+            <div class="gia">19.000đ/0.6-1.3kg</div>
+            <div class="nut" data-ten="Bông Cải Xanh" data-gia="19000" onclick="themVaoGio(this)">MUA</div>
+        </div>
+        <div class="card" data-aos="fade-up">
+            <img src="https://nongsandungha.com/wp-content/uploads/2021/07/ca-tim-2.jpg">
+            <div class="sanpham">Cà Tím Đà Lạt</div>
+            <div class="gia">22.000đ/500g</div>
+            <div class="nut" data-ten="Cà Tím Đà Lạt" data-gia="22000" onclick="themVaoGio(this)">MUA</div>
+        </div>
+        <div class="card" data-aos="fade-up">
+            <img src="https://cdnv2.tgdd.vn/bhx-static/bhx/Products/Images/8785/357892/bhx/cu-den-200g_202510141052120094.jpg">
+            <div class="sanpham">Củ Dền</div>
+            <div class="gia">9.600đ/200g</div>
+            <div class="nut" data-ten="Củ Dền" data-gia="9600" onclick="themVaoGio(this)">MUA</div>    
+        </div>
+        <div class="card" data-aos="fade-up">
+            <img src="https://cdnv2.tgdd.vn/bhx-static/bhx/Products/Images/8785/357886/bhx/su-su-200g_202510141006430904.jpg">
+            <div class="sanpham">Su Su</div>
+            <div class="gia">4.400đ/200g</div>
+            <div class="nut" data-ten="Su Su" data-gia="4400" onclick="themVaoGio(this)">MUA</div>
+        </div>
+        <div class="card" data-aos="fade-up">
+            <img src="https://cdnv2.tgdd.vn/bhx-static/bhx/Products/Images/8785/357866/bhx/khoai-mo-700g_202510131345525966.jpg">
+            <div class="sanpham">Khoai Mỡ</div>
+            <div class="gia">27.300đ/700g</div>
+            <div class="nut" data-ten="Khoai Mỡ" data-gia="27300" onclick="themVaoGio(this)">MUA</div>
+        </div>
+        <div class="card" data-aos="fade-up">
+            <img src="https://nongsandungha.com/wp-content/uploads/2021/06/khoai-mon-tim-1-min.jpg">
+            <div class="sanpham">Khoai Môn tím</div>
+            <div class="gia">35.500đ/500g</div>
+            <div class="nut" data-ten="Khoai Môn tím" data-gia="35500" onclick="themVaoGio(this)">MUA</div>
+        </div>
+        <div class="card" data-aos="fade-up">
+            <img src="https://cdnv2.tgdd.vn/bhx-static/bhx/Products/Images/8785/343139/bhx/ca-chua-300g_202508291412010487.jpg">
+            <div class="sanpham">Cà Chua</div>
+            <div class="gia">9.000đ/300g</div>
+            <div class="nut" data-ten="Cà Chua" data-gia="9000" onclick="themVaoGio(this)">MUA</div>
+        </div>
+        <div class="card" data-aos="fade-up">
+            <img src="https://cdnv2.tgdd.vn/bhx-static/bhx/production/2025/12/image/production/2025/12/image/Products/8785/341878/muop-huong_202512181402085285.jpg">
+            <div class="sanpham">Mướp Hương</div>
+            <div class="gia">5.000đ/250g</div>  
+            <div class="nut" data-ten="Mướp Hương" data-gia="5000" onclick="themVaoGio(this)">MUA</div>
+        </div>
+        <div class="card" data-aos="fade-up">
+            <img src="https://cdnv2.tgdd.vn/bhx-static/bhx/Products/Images/8785/271743/bhx/dau-bap-khay-250g-10-12-trai_202510231548139655.jpg">
+            <div class="sanpham">Đậu Bắp</div>
+            <div class="gia">6.000đ/200g</div>
+            <div class="nut" data-ten="Đậu Bắp" data-gia="6000" onclick="themVaoGio(this)">MUA</div>
+        </div>
+        <div class="card" data-aos="fade-up">
+            <img src="https://cdnv2.tgdd.vn/bhx-static/bhx/Products/Images/8785/220470/bhx/khoai-lang-nhat-1kg_202504140831119959.jpg">
+            <div class="sanpham">Khoai Lang Nhật</div>
+            <div class="gia">27.500đ/500g</div>
+            <div class="nut" data-ten="Khoai Lang Nhật" data-gia="27500" onclick="themVaoGio(this)">MUA</div>
+        </div>
+        <div class="card" data-aos="fade-up">
+            <img src="https://cdnv2.tgdd.vn/bhx-static/bhx/Products/Images/8785/230439/bhx/ca-tim-500g_202504140954336033.jpg">
+            <div class="sanpham">Cà Tím</div>
+            <div class="gia">14.500đ/500g</div>
+            <div class="nut" data-ten="Cà Tím" data-gia="14500" onclick="themVaoGio(this)">MUA</div>
+        </div>
+        <div class="card" data-aos="fade-up">
+            <img src="https://cdnv2.tgdd.vn/bhx-static/bhx/Products/Images/8785/233985/bhx/cu-cai-trang-1kg_202504140834423096.jpg">
+            <div class="sanpham">Củ Cải trắng</div>
+            <div class="gia">6.600đ/300g</div>
+            <div class="nut" data-ten="Củ Cải trắng" data-gia="6600" onclick="themVaoGio(this)">MUA</div>
+        </div>
+        <div class="card" data-aos="fade-up">
+            <img src="https://cdnv2.tgdd.vn/bhx-static/bhx/Products/Images/8785/341490/bhx/hanh-tay-300gr_202510211313343025.jpg">
+            <div class="sanpham">Hành Tây</div>
+            <div class="gia">10.500đ/300g</div>
+            <div class="nut" data-ten="Hành Tây" data-gia="10500" onclick="themVaoGio(this)">MUA</div>
+        </div>
+        <div class="card" data-aos="fade-up">
+            <img src="https://cdnv2.tgdd.vn/bhx-static/bhx/Products/Images/8785/299805/bhx/dau-rong-tui-200g_202510231609331473.jpg">
+            <div class="sanpham">Đậu Rồng</div>
+            <div class="gia">15.000đ/200g</div>
+            <div class="nut" data-ten="Đậu Rồng" data-gia="15000" onclick="themVaoGio(this)">MUA</div>
+        </div>
+        <div class="card" data-aos="fade-up">
+            <img src="https://cdnv2.tgdd.vn/bhx-static/bhx/production/2026/2/image/production/2026/2/image/Products/8785/316284/bi-do-non-trai-250g-350g_202602231604497339.jpg">
+            <div class="sanpham">Bí Đỏ non</div>
+            <div class="gia">10.900đ/250-350g</div>
+            <div class="nut" data-ten="Bí Đỏ non" data-gia="10900" onclick="themVaoGio(this)">MUA</div>
+        </div>
+        <div class="card" data-aos="fade-up">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMREhUSEhIWFhUXFR4bFxgXGBcZGhgdGhYYGhUaGhkYHSggGholHxoWITEhJikrLi4uGR8zODMtNygtLisBCgoKDg0OGxAQGy8mICYwKy0tKystLS0rLS0tLSstKys1LTUrKy0tLS0tLS0tLS0tNS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABQYDBAcCAf/EAD8QAAEDAgQDBgQEAwYHAQAAAAEAAhEDIQQSMUEFUWEGEyJxgZEyobHBQlLR8CNy4SQzYoKS8QcUQ1OissIV/8QAGQEBAAMBAQAAAAAAAAAAAAAAAAECBAMF/8QALBEAAgICAQMCBQMFAAAAAAAAAAECEQMhMQQSQSJRMmFxwfATgbEFI0JSkf/aAAwDAQACEQMRAD8A7iiIgCIiAIiIAiIgCIiAIiIAiL4TGqA+otKpxag3WvT/ANbZtraVjZxzDkT3rQOZtNptOqr3x9yLRIooFva7DF0BziLeINMCdJ32Um3iVIs7wVGlvMHlqinF8MdyNtFV39s6YzAsuPh8bSCDuSNNrXUlw3j9Kr4SQx/Imx6g7qqywekyFNEsixmu38zfcL2CuhY+oiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIDBjsYyiw1Kjg1o1J+WmpVV452lp1qWSkCWunMXtIsCIIBvB1noontBiK7K9RhrPfTnmYvDgOQjp6qs0sY7O7NMXF+hIK8jqusnuENe5nyZXwSTO7LhIE7c/6heuKcUaAA0S5pDQPOSCegg/JQuKzTLTZrhNyBfNt79LL5V8Ycbk5ZidYIP0BXD9ekjj3HnF8Yc1puCc4iwjwiSfd0eiyYrijjSaHkkEF2UGG3BAzDfUmDbSyhuHUjWe3MYpgiXEE5iXXAG8z7BfeJ1iXvk7+3l029laTlwQ2zd4DNWvrOnzmCpvthxFrCKLLQ0FxG9vCOtrrD2Iw3d0X1yOcD1hRj397iQ4izngunYDUHpA+as9RSXklcUSj8dUENB0ABv8AiDRNvMFTPCMfUBB7w0zqYIIIGpLTZVCpiSSNZmZOk66LYw1Qt7x/+EiDsXmNfLMusJNPZZPZ1TgfamlWbFRzWv8AYHqJ08lPseHCQQRzFwuBU8ZlOvnCleG8crMvTNTyaSB8loj1aXJ0WauTtSKtdi+NPxFMtrNyvabSZLhrJ5clZVrhNTjaO6dqwiIrEhERAEREAREQBEXxxgSbBAfUUFie1uFY8szlxG7RI0nXQ7L5V7XYVoDszjPJpnSd1yefGv8AJFe+PuTy0uJ4p1MAtAMmCTtyWbBYtlZgfTcHNO4+YPI9Fmc0EQRIOqu/UtMnlHOO0OPrNqsqjN4XguAJGkW5c1MdpsU/FNyUqhZSgFxFi+YOWdhHzW12k4U03izhlHKdQDyHVRDcW3LA8p18tFhl3RuLfJwdq0e+H8OpU2ZQwQ+7gdzYE/Q+qrvaLh3djM28ugAaxrJ+QU5Srkh4sY8Ygj8NnddL/wCVfcweJOx22kQfquWTGpx1yVaTRQTWnM3ctMDq3xfZw9VscNipXpjoXDSJDHEA9LKPxjTQrFguabrE7xdvLaPdSfZ1n9rpBuhJIn8pY4j9PRYow9SRwXJFPxDhUDyZsZvysPSYWni6mYzqSY8yenut/idPJWqMI+HOQCOQLuXRbvDOFvrVqTP+nTAL9gSbujrsu6TZaiapv/5bAU2gQ58wOUzJ+nuq7gzleHgEkGddec+an+1VfM5lNg8LQC50akiQ30BBjqozD4e/M+ijIn3a8Evk1uJ4cMLgL3sd4Ilvyhe8WX0wKIac1jVcBq6PC0dGgx5ypLENAAxDoIpNgjnUFqQjlEH/AClQeCwz6jifEATJM2ub9ZVr3ol6JDAcLNTxVJjkdfQbb3VjwDKcgGzbSReB0US2zQ1s3+kx8yPYBbXCKve1DRZfxZSeZnRdYKmEdVwbKYYO7DcpFsoF1nWPDUQxrWDRohZF6i4NoREUgIiIAiIgCLC3FMM+MW1vH1WrxTHsZSec4nKYhwBJi19lVySVkWiE4x2pc2W0WjMC4Em+lgW81RcF2ixXevpVa73NqNLYdG7fDFrTpZZatYzaxOkc9RH73UVxA52943WJ2/f+y8fLnlJ22Y5Tb2en1fi1tf2+IdLX9Ep4gu6mRHPeRC16FcFzHGwcYfcx4vC77pwqo6i6Zyva4kHkQcrTB8nG/NcJJKHyKs7XwHBCjQpsAI8ILp1zG7p6ySpBcv4b26xHf0m1HB7XPDXDK0G9pkbzddPJXs9Nmhkj6PGjZjmpLRrcSw/eU3DfUeYXJOKUatOq9zHh7SZLcxzNk6Qdp3GnRZ+N9ssW17qLXFpuM0mRIJtbqPZQfDccaeWrIJknxXmefrf2WLqs0ZNUjPlmmyVwtWpTcHgOJmQYJjzAHpyU2x2Uh7RlpukOBkFjj+GD+E6gnXTZQY4zTrR3jO75kOkfqT0AOq3uHOp05IMhw8QcHnMCdxGs6HaFGMhMjO1FFtSsQ0RV7kPZB/vA0FrmkcxlJn0W52DwL8wqvZDQ12Qu18RGYAflOv8AuojtY11N+HxFF2amzN4nENy+KQx07wT5q+0cS17BVBgFuYHaOqKCc7fgJeqym9pmAY0CbOAEW/E0tvPmt7AV+4wocPidMk6yQSVGdpHgYrOTo5p1OxB21Qk5O6MeCo62u8NJPUKt80DYq4glrHkzLABsMzfC6w3sD6hesDT1c7X6L5hWNLSx9hMtIHwne24MCR0CyYljgzJ+IwBGhmwIO4VX7kM0O0IIpU6YuXk1DHXws+QPusuGo5abWkwGt8TvP/62A/RbfEsLNZ5nKynDMx0GUAQB+JxMmFq4jxtAYCGg6aknmTufoitWHyZaNWTmDQNhqYEQBfpurr2H7P5CcS8QXXaD11d67eapXDwA9rDdwPijQdOp/d12HB1A6mxwBALQYcIItoRzWzpoqTt+DpiVu2ZkRFuNIREQBERAEREBgq4Om4y5gJVf4xwFwOejfmw39uY6Kzouc8cZLZDimc4NOXDMy4N9nC+/MKA4lhAyHMuyfFOsaH5LrmN4dSq/GwE89HD1F1UuN8FdROZsuYdzEz169d1jy4KW9o4yx6Oa02Oa4tFoJGsfD6+azcVdlcav/daDfm0Q75/VS/GuGACpUZsZI+bvmSq89hqYek28vqlrZizQBnIPISPZYZY38LODWqM/CC0Pp165ikxzXOAuXDMItN9vZdM432ubVwDq+EMlzu7vY0ydZ5GNPMLj3HsQBFJvIEx5RTbHRpB8z0Ul2Oq4ilUAFN3dP8NQPY4sqN3kAex2XeEnCLivJMZOOkbPHKpe9rhu1rrbmDr81GV8K+q4CkYFIS4DUzADRpfW/RWTiOBDnB1PxNDiAQZIE+HNax8xsoelQyVHVAZbDpG5Guvp9Vljk9WyrWzxhcFVb/EqW5NEEx1cbD5rbe5kZ6lN/XLUc5xPKGmAAtSpXcdMh9z9/ko7E4Wo8SQehBgDnrZd1JCyRqdoaQDmCgXMcIc2o5xJA0MEwHcipjspWcHCg0mpQqAlhOrSPEWu5HXz13VLr4V9g4hw/mBcPnfyVm/4atLK1ZzjAbTuNpLhlPsCrJ2yVyZ+0M94Q4A33AP+y2WMzMFWIizx1iGu8iB7g9F84me8rO6H9+izMfBFPZ7S0+rTHsQD6KqeyyNajUBPRS/BznrtpOALW+O4+GDseR5Ku8MfuVPcAB7uvWvLvAyN5tb5qkZd0qJhzZqcRxLq1Q2tJgDaTy5r3V/hgMaW5tzmaMvPf4vp5rxjXmi2GjxnUyDHlG/XZRDXbHUHdMuXsZRsmeHMyuaQBIm+ZpOx2Pkuv0X5mtPMA+4XIsFSETzXTezdbPhqRP5Y9iQPot/RytHbCyTREW40BERAEREAREQBERAF4q0w4FrhIIghe0QHPe0PDjQqyb03+F3rYO+x6+ag8Rw1lNpa1s5GNa2eTruv1cYJ5BdWx+DbWYWPEghUqrgXUnhj7geGebSZYfMGR6hYMuLtfyf5RwnApWH41WoyDh6TXl135IIOpmNSo/ifaKv4vGSDqHfD5AD7aqbxXDiC7KRmJdZxIBLnGdP8Ob26KPpcHmoKj4LGXAnV21tbfZYcknF1J6M7TI3DY2pIcxndO2u0O+ub5KTw+KLvFXZEy01GDoRD2wAbHUAHzWHiDGODZYLk/I3+S8YDjhZNCoM9IiL3LJ0hx26bbQucHGXCoR0z27AuY8FpBMEg6teItH7stWniGVJz+B1rTPkQY06KU4fXyQ1/ipzMi5YeY6cwtXjHDMpka6tI0c3Y9VVZNfL+CzWrRhq4RkTP3+sKS7MnJRxLgbS1o5izrHcaqCqA02jxEybSbQdApvhNXu8O90GHOAOk2BFuZ0V4PlkJbPNOsdxmG2xHkY06QtnDtb3tJxzHxgXI3MbC+q1KHdvl1N0c7aHq07eS2Kzy0NO7SD5wZEdLI8lE2aOHBa3KNSco85gK14r+z4enSbNxJjU7Af8AsSozhWCz4kkfC05m9c92+zSuncI4UKZNV4GciB/haNB5nUrt0mGUm2dYw0cfdSc8kkX5XtbYH7LAMwMAG+39F3mpRa4Q5oI6gFQ2P7LUKhzMaGPixGk7SF0yf06XMZX9SHga4ZQuGDwwYE6TaJteF1Lh9EMpMa2IDABGmmo5qnYjsnXHwljpneI5aq0cAwr6VBrKkZhNgZiTMLT0kJQ9MkXxJp7RIoiLadgiIgCIiAIiIAiIgCIiAKO41hWvZex0B89PWVIrDisOKjS0+/I7FVnHuTRDOc8bwvjb4R8YF9PEDm+8eaiq+FblJFgR4TcwDcT58leeOcPnKDq1wcDz2+8qtYnCubTORjnNYMrnAEwRrMCZiF4vXY3prkzTjsrDMLmY5n4h4m7iNH5Tvt7FRlPCMNtJMncnl5bqT4Zii14NnCZjnsY5GJ81r8TwDhjAyn8DmhzXcm2CzxTa0VatGKtisg62sNlMYF4rM7lxvrTJtB1LfIqt46c2VuskXjY/Ibn0U7w/hdZ1CpVBtSbmLjMj8sACSTBPToojjb4/crBuyNruIsbRIIOxE/09laOF8HdWpCkwDNlLiHaHcjpqonF0P+Y7mu34XE96OoAk+uWPVWOhRqub/BZUc7M2e6f3bstyfHsLNHqu2OG6OqjyVl2CAcC1pY5uuuvIzt1X0OL2OabOHwjqNW+RF/Tquqcb4GzEUS7ugK2QEEkZpA0LhY8r2VBwXDS+p4mluR0GbTYhwjm3T1UZumnjnT2n5Dx0yf7H8P8AEwHYAn2/QBX1QXZmj8TvQfv2U6vY6aHZjRoitBERaCQiIgCIiAIiIAiIgCIiAIiIAiIgC8VagaC5xAA1JXtavEsEKzCwmLyD1CrNtRfbyQyI4jxug4akR+IwB7kqN4LiO4xFWp3jXUaoBPjbIeLTE6R9lix3Y+tUNMh7IE5gSdZ8JEC9lqcQ7NVfhdUaIGgBvyiYXkTydSpdzgcbnd0aHbTCUXEYjDECTD2iMoOucZbX0N+Sjazu8wzKwHjovh38pN/SF0Lh3DaNTBtaxgHhg2EkgQcx3n7hVqnwxrQ+m2cj2EGb5XAQRPIghw9VGXE77/El4Ha7v3KzxDh/8aWie8GcdRAMeriug/8ADmnGHfm+Iv8AF/pBj0mFUq9Mtp0yfiYCz3g+9lO9g+JFtV2HcZDxnaT8WaBmBi0RPsqdLkjHOk/P3EElIhMdgW4fF4ijT/uz4g38pMSB0klW7sUyM56KD7QMBxtZw/Kwet5+gVl7IM8Dz1H3Wjp1/ff1f3Lx5LAqXUI8dT8znOH+Zxy/KT6q1cTqZabo1PhHmbT6a+irT6eZzKY3PysAtXUO2kizLDwajlpN63W8vjGwABsF9WqKpUWCIikBERAEREAREQBERAEREAREQBERAEREAUbxmlYPGykljr08zSOYVMke6LRDIPgVXJVfT2f4m+e4/fJauMpZK7mxZwMeYu35EhY8QSyHj4qbp8xuFu8eIc1lZulnA9Br8ivNu8bX+rv9nz9yvgrfHMEO5JA/Fm+dz/5FeewmHHeio6IpsJlxIyzmE8jyupLEtD2PYdPs4EH7Kudn+Iii2q18jNTqU43LmuIH3WLUc0Zvhfa6KvmyQqvz1Hv/AD1SfQSfurd2VZFEnm77BVIMgNHJsn1V07Pty4dp8z81u6K3O2WieOM1JIbyufM2HsJ91pcDp56rn7N0+gWLiFecztybev8ASFL8Cw+SkObr/otEfXlsnlkiiIthYIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiICv8Vo5ahnRw+uq1uGPzUqmHdrTMjq10z7GfQhTXGKGZk7hVrEudTe3EMEx4agG7TZ3yg+YC8zMv08nd48/R8/8AHso+TUqvyZZ/kPlpP0Kr2PwT6mMohvwElz4/CRdxP81h5lWbi1Jrxnb4mPA026/vktZlLKMtFjjaM7rkjmT9gvPlqbT2itXo8VXyXHaco9FcXnJQYzctE+W/zMeqpAH8RlMA63t18R+qtWNxli8noPt++ZWrpciSk/z5lkab295VazYG/mTdW1rYEDZVzs5hyXF58/fT7qyL0OmXp7vcsgiItJIREQBERAEREAREQBERAEREAREQBERAEREAREQHxwmxUR/+flc6HW5KXc6BK1C+brlljF1ZDIrHYFoYcjQNyBoZ1ssbcYMggaCI2spepEXVeq0RLmg+GZBHJY8kK+Eg8jEB9nOPposeMGZzW5TlG4WvXoOZcXHMfdZKOK5rOl4kQWvhGXuwGx1/fkt5VTC4gsIe0+Y5jcK0UqgcAQZBXqYppqiyZ7REXUkIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAL44xdfV4qszAjmjBpY7FWAG68MqbLWxdLuwGzN91rNxeUrDLI1P1FTcx3iEKqYniha4hrSWgxPQanqpfF8SdBgtb6T8yq/i8WfzH0gfZcMuRN2mSSLK/JY6zNwo7D4p35ipGnUJF0U1JUQzNh3KwdnmG5236nZV6gNFY+zhs8dR9126f4kQuSYREW8uEREAREQBERAEREAREQBERAEREAREQBERAEREBG8Wp6H0ULVpEDTZWjENlsRM/rqoHiZc0iGnlCyZ4K+4itlfxTCo04Ykqw1qImR6hY+5GsLE8SbBE0cGZ6KTw9Hltusop8llaQGwV0hBIgx4SmJO/VWbhGHyMk6uv+iiOF8LcXMfEMBkzvawA5dTy3VlWzBClbJoIiLQSEREAREQBERAEREAREQBERAEREAREQBERAEREAWOvRD2lrtCFkRAV3iuAcwfwm22Av9QoujwjF1QT8HLMW/OGq7Is76eLdllKis0ezFQEF2IJG4ygexBUth+EU2ay7+aPsFIIukcMI8IhuwiIuhAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREB/9k=">
+            <div class="sanpham">Su Hào</div>
+            <div class="gia">15.500đ/500g</div>
+            <div class="nut" data-ten="Su Hào" data-gia="15500" onclick="themVaoGio(this)">MUA</div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="giohang.js"></script>
+</body>
+</html>

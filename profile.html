@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="profile.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="giohang.css">
+    <link rel="stylesheet" href="thanhtoan.css">
+</head>
+<body>
+    <script src="giohang.js"></script>
+    <script src="thanhtoan.js"></script>
+<header class="head">
+        <div class="logo">
+            <a href="btl.html"><span class="green">Fr</span>uit</a>
+        </div>
+        <div class="search-box">
+            <select onchange="if(this.value) window.location.href=this.value;">
+                <option value="">Select Category</option>
+                <option value="vdd.html">Vegetables</option>
+                <option value="quan2hoaqua.html">Fruits</option>
+                <option value="card-container.html">Root & Fruit Vegetables</option>
+                <option value="quan3giavi.html">Herb & Spices</option>
+            </select>   
+            <input type="text"  id="ndtim" placeholder="Search Products..." onkeyup="timkiem()">
+            <button>🔍</button>
+        </div>
+    <div class="right">
+        <span class="phone">📞 +91 235 548 7548</span>
+        <span class="help">❓ Help & More</span>
+        <span><a href="profile.html">👤</a></span>
+    </div>
+</header>
+    <nav>
+        <ul>
+            <li><a href="btl.html">Home</a></li>  
+            <li><a href="btl.html#about">About Us</a></li>
+            <li><a href="btl.html#blog">Blog</a></li>
+            <li><a href="vd.html">Shop</a></li>
+            <li><a href="btl.html#contact">Contact Us</a></li>
+    
+        </ul>
+        <div class="cart-icon"> 🛒</div>
+    </nav>
+
+<div class="profile">
+
+    <h1>Thông Tin Cá Nhân</h1>
+
+    <div class="thongtin">
+        <div><p><strong>Họ:</strong> <span id="ho"></span></p></div>
+         <div><p><strong>Tên:</strong> <span id="ten"></span></p></div>
+         <div><p><strong>Số điện thoại:</strong> <span id="sdt"></span></p></div>
+          <div><p><strong>Email:</strong> <span id="email"></span></p></div>
+           <div><p><strong>Mật khẩu: **********</strong> <span id="matkhau"></span></p></div>
+    </div>
+
+    <button id="dangxuat">Đăng xuất</button>
+
+</div>
+
+<script src="profile.js"></script>
+
+</body>
+</html>

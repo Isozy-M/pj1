@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quên mật khẩu - Greengrocer's</title>
+    <link rel="stylesheet" href="quenpass.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+<div class="container" data-aos="fade-up">
+        
+        <form id="forgotPasswordForm" class="form">
+            <h2>Khôi phục mật khẩu</h2>
+            <p class="subtitle">Vui lòng nhập email đã đăng ký để thay đổi mật khẩu.</p>
+            
+            <div class="input-group" id="email-section">
+                <label for="email">Email của bạn</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                <span class="error-message" id="emailError"></span>
+            </div>
+
+            <div class="input-group" id="password-section" style="display: none;">
+                <label for="newPassword">Mật khẩu mới</label>
+                <input type="password" id="newPassword" name="newPassword" placeholder="Nhập mật khẩu mới">
+            </div>
+
+            <button type="submit" class="btn-submit" id="btnAction">Tìm tài khoản</button>
+            
+            <div class="footer">
+                <a href="dki.html">Quay lại Đăng nhập</a>
+            </div>
+        </form>
+
+    </div>
+
+    <script>
+
+let step = 1; 
+let userIndexToUpdate = -1; 
+document.getElementById('forgotPasswordForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    let danhSachUser = JSON.parse(localStorage.getItem('users')) || [];
+    const emailInput = document.getElementById('email').value;
+    if (step === 1) {
+        userIndexToUpdate = danhSachUser.findIndex(user => user.email === emailInput);
+        if (userIndexToUpdate !== -1) {
+            alert("🔍 Đã tìm thấy tài khoản! Vui lòng nhập mật khẩu mới phía dưới.");
+            document.getElementById('password-section').style.display = "block";
+            document.getElementById('email').disabled = true; 
+            document.getElementById('newPassword').required = true; 
+            document.getElementById('btnAction').innerText = "Cập nhật mật khẩu";
+            step = 2; 
+        } else {
+            alert("❌ Email này chưa được đăng ký trong hệ thống!");
+        }
+    } 
+    else if (step === 2) {
+        const newPassword = document.getElementById('newPassword').value;
+        if (newPassword.trim() === "") {
+            alert("Vui lòng nhập mật khẩu mới!");
+            return;
+        }
+        danhSachUser[userIndexToUpdate].mat_khau = newPassword;
+        localStorage.setItem('users', JSON.stringify(danhSachUser));
+        alert("🎉 Đổi mật khẩu thành công! Hệ thống sẽ chuyển bạn về trang Đăng nhập.");
+        window.location.href = "dki.html";
+    }
+});
+    </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

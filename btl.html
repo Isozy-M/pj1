@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="btl.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="giohang.css">
+    <link rel="stylesheet" href="thanhtoan.css">
+</head>
+<body>
+    <script src="giohang.js"></script>
+    <script src="thanhtoan.js"></script>
+    <header class="head">
+        <div class="logo">
+            <a href="btl.html"><span class="green">Fr</span>uit</a>
+        </div>
+        <div class="search-box">
+            <select onchange="if(this.value) window.location.href=this.value;">
+                <option value="">Select Category</option>
+                <option value="vdd.html">Vegetables</option>
+                <option value="quan2hoaqua.html">Fruits</option>
+                <option value="card-container.html">Root & Fruit Vegetables</option>
+                <option value="quan3giavi.html">Herb & Spices</option>
+            </select>   
+            <input type="text"  id="ndtim" placeholder="Search Products..." onkeyup="timkiem()">
+            <button>🔍</button>
+        </div>
+        <div class="right">
+            <span class="phone">📞 +91 235 548 7548</span>
+            <span class="help">❓ Help & More</span>
+            <span><a href="profile.html">👤</a></span>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="btl.html">Home</a></li>  
+            <li><a href="btl.html#about">About us</a></li>
+            <li><a href="btl.html#blog">Blog</a></li>
+            <li><a href="vd.html">Shop</a></li>
+            <li><a href="btl.html#contact">Contact Us</a></li>
+        </ul>
+        <div class="cart-icon"> 🛒</div>
+    </nav>
+ <section class="hero" data-aos="fade-up">
+        <div class="hero_text">
+            <h3>ORGANIC AND FRESH FOOD</h3>
+            <h1>
+                Get Freshness Delivered
+                On Your Doorstep.
+            </h1>
+            <div class="btn">
+                <a href="vd.html"><button class="btn_gr">Shop Now</button></a>
+            </div>
+        </div>
+    </section>
+<div id="about" class="blog1" data-aos="fade-up">
+    <h1> ABOUT US </h1>
+</div>
+<section class="about" data-aos="fade-up">
+    <div class="about-left">
+        <img src="https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/4/14/base64-16814406228511738069163.png" alt="HotTea Organic Farm">
+    </div>
+
+    <div class="about-right">
+        <h2 class="main-title">HotTea - Tươi Ngon Từ Nông Trại, Sạch Lành Tới Mâm Cơm!</h2>
+        
+        <p>
+            Bạn đang tìm kiếm sự tươi mới cho bữa ăn gia đình? Hãy để <strong>HotTea</strong> đồng hành cùng bạn! 
+            Chúng tôi tự hào mang đến danh mục nông sản phong phú, được tuyển chọn khắt khe mỗi ngày từ các nông trại hữu cơ uy tín.
+        </p>
+
+        <h3 class="sub">Tại sao nên chọn HotTea?</h3>
+
+        <div class="m-cards">
+            <div class="m-card">
+                <div class="icon-box">🥗</div>
+                <h4>Hái trong ngày</h4>
+                <p>Luôn ở trạng thái tốt nhất, giữ trọn hương vị và dưỡng chất tối ưu.</p>
+            </div>
+
+            <div class="m-card">
+                <div class="icon-box">🛡️</div>
+                <h4>Cam kết 3 KHÔNG</h4>
+                <p>Không chất bảo quản - Không thuốc BVTV - Không rõ nguồn gốc.</p>
+            </div>
+
+            <div class="m-card">
+                <div class="icon-box">🧺</div>
+                <h4>Nông sản thu nhỏ</h4>
+                <p>Đáp ứng mọi nhu cầu từ rau lá, củ quả đến gia vị thơm nồng.</p>
+            </div>
+        </div>
+
+        <p class="footer-text">
+            Sức khỏe bắt đầu từ những điều nhỏ nhất trên đĩa thức ăn. Hãy để HotTea chăm chút cho từng bữa ăn 
+            của gia đình bạn thêm phần ngon miệng và an toàn. <strong>Đặt hàng ngay hôm nay</strong> để nhận 
+            được những phần quà xanh mướt từ chúng mình nhé!
+        </p>
+    </div>
+</section>
+<div id="blog" class="blog1" data-aos="fade-up">
+    <h1> BLOG </h1>
+</div>
+<section class="blog" data-aos="fade-up">
+    <div class="card">
+        <img src="https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2025/3/2/rau-cu-17408889507341424865884.jpg" alt="">
+        <div><h2> <a href="blog1.html">💡 15 loại rau củ chứa nhiều dinh dưỡng</a></h2></div>
+        <div><p>Rau củ là thực phẩm giàu chất dinh dưỡng nhất vì chúng chứa nhiều vitamin,
+khoáng chất và chất chống oxy hóa...</p></div>
+    </div>
+        <div class="card">
+        <img src="https://cdn.tgdd.vn/Files/2019/11/26/1222471/7-cach-chon-rau-cu-qua-tuoi-ngon-cuc-don-gian-202112311224397887.jpg" alt="">
+        <div><h2> <a href="blog.html">💡 7 cách chọn rau củ quả tươi ngon cho các gia đình</a></h2></div>
+        <div><p>Làm sao để phân biệt được đâu là rau củ tươi ngon, đâu là rau củ bị hư hỏng. Với kinh nghiệm còn ít ỏi thì bạn phải...</p></div>
+    </div>
+        <div class="card">
+        <img src="https://cdn2.fptshop.com.vn/unsafe/1920x0/filters:format(webp):quality(75)/cach_lam_salad_mayonnaise_0_1_1_1_f3e3a566b6.jpg" alt="">
+        <div><h2> <a href="blogquan.html">💡Bật mí cách làm salad mayonnaise cực đơn giản ngay tại nhà </a></h2></div>
+        <div><p>Với các cách làm salad mayonnaise đa dạng trong bài viết, bạn có thể lựa chọn và biến tấu salad thành nhiều kiểu...</p></div>
+    </div>
+</section>
+<div id="contact" class="contact" data-aos="fade-up">
+    <div class="contact-box">
+        <h3>ANY QUESTION YOU HAVE</h3>
+        <h1>897-876-987-90</h1>
+        <div class="contact-buttons">
+            <a href="thu.html" class="make-call">MAKE A CALL</a>
+            <a href="thu.html" class="contact-us">CONTACT US</a>
+        </div>
+    </div>
+</div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
+</body>
+</html>

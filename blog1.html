@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Dinh Dưỡng: 15 Loại Rau Củ Siêu Bổ Dưỡng Cho Sức Khỏe</title>
+    <link rel="stylesheet" href="giohang.css">
+    <link rel="stylesheet" href="thanhtoan.css">
+    <style>
+html, body {
+    margin: 0;
+    width: 100%;
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.head{
+    display: flex;
+    align-items: center;
+    padding: 15px 75px;
+    justify-content: space-between;
+    background-color: White;
+}
+
+.logo{
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.6s ease-in-out;
+}
+.logo:hover{
+    transform: rotate3d(0, 1, 2, 360deg);
+}
+.logo a{
+    text-decoration: none;
+    display:block;
+    color:black;
+}    
+.green{
+    color: greenyellow;
+}
+.search-box{
+    display: flex;
+    border: 1px solid #ddd;
+    background-color: white;
+}
+.search-box input{
+    padding: 12px;
+    border: none;
+    width: 250px;
+}
+
+.search-box select{
+    padding: 12px;
+    border: none;
+}
+.search-box button{
+    border: none;
+    background-color: white;
+    padding: 12px;
+    cursor: pointer;
+}
+.right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav li {
+  margin-right: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+nav li:hover{
+    transform: scale(1.1);
+    letter-spacing: 1px;
+}
+.cart-icon {
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+nav{
+  background-color:white;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 75px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000;
+  box-shadow: 0 5px 20px -10px rgba(0,0,0,0.3);
+}
+
+section {
+    background-color: #2e7d32;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+section p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 30px;
+}
+
+main {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+.meta-info {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+.intro {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    font-style: italic;
+    color: #555;
+}
+.veggie-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.veggie-item {
+    border-left: 4px solid #4caf50;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+.veggie-item h3 {
+    color: #2e7d32;
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+.veggie-item p {
+    margin-bottom: 8px;
+    color: #444;
+}
+.benefits {
+    font-size: 0.95rem;
+    background: #f1f8e9;
+    padding: 8px 12px;
+    border-radius: 4px;
+    display: inline-block;
+    color: #33691e;
+    font-weight: bold;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sidebar-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+.sidebar-box h4 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #4caf50;
+    padding-bottom: 5px;
+}
+.sidebar-box ul {
+    list-style: none;
+}
+.sidebar-box ul li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+.sidebar-box ul li a:hover {
+    color: #4caf50;
+}
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+}
+    </style>
+</head>
+<body>
+    <script src="giohang.js"></script>
+    <script src="thanhtoan.js"></script>
+    <header class="head">
+        <div class="logo">
+            <a href="btl.html"><span class="green">Fr</span>uit</a>
+        </div>
+        <div class="search-box">
+            <select onchange="if(this.value) window.location.href=this.value;">
+                <option value="">Select Category</option>
+                <option value="vdd.html">Vegetables</option>
+                <option value="quan2hoaqua.html">Fruits</option>
+                <option value="card-container.html">Root & Fruit Vegetables</option>
+                <option value="quan3giavi.html">Herb & Spices</option>
+            </select>   
+            <input type="text"  id="ndtim" placeholder="Search Products..." onkeyup="timkiem()">
+            <button>🔍</button>
+        </div>
+        <div class="right">
+            <span class="phone">📞 +91 235 548 7548</span>
+            <span class="help">❓ Help & More</span>
+            <span><a href="profile.html">👤</a></span>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="btl.html">Home</a></li>  
+            <li><a href="btl.html#about">About us</a></li>
+            <li><a href="btl.html#blog">Blog</a></li>
+            <li><a href="vd.html">Shop</a></li>
+            <li><a href="btl.html#contact">Contact Us</a></li>
+        </ul>
+        <div class="cart-icon"> 🛒</div>
+    </nav>
+
+    <section>
+        <h1>Sống Xanh Sống Khỏe</h1>
+        <p>Khám phá thế giới dinh dưỡng từ thực vật tự nhiên</p>
+    </section>
+
+    <div class="container">
+        
+        <main>
+            <h2>Top 15 Loại Rau Củ Chứa Nhiều Chất Dinh Dưỡng Nhất Cho Cơ Thể</h2>
+            <div class="meta-info">
+                Đăng bởi: <strong>Admin Sức Khỏe</strong> | Ngày: 16 Tháng 6, 2026 | Chuyên mục: Dinh Dưỡng
+            </div>
+
+            <p class="intro">
+                Việc bổ sung rau củ vào chế độ ăn uống hàng ngày là cách tốt nhất để cung cấp vitamin, khoáng chất và chất chống oxy hóa cho cơ thể. Dưới đây là danh sách 15 loại rau củ "siêu thực phẩm" được các chuyên gia dinh dưỡng khuyên dùng hàng đầu.
+            </p>
+
+            <div class="veggie-list">
+                
+                <div class="veggie-item">
+                    <h3>1. Cải bó xôi (Rau chân vịt)</h3>
+                    <p>Đứng đầu danh sách nhờ hàm lượng chất sắt, canxi và vitamin A, C, K dồi dào. Giúp bổ máu và tăng cường xương khớp.</p>
+                    <span class="benefits">✨ Thúc đẩy tim mạch, giàu chất chống oxy hóa</span>
+                </div>
+
+                <div class="veggie-item">
+                    <h3>2. Bông cải xanh (Súp lơ xanh)</h3>
+                    <p>Chứa nhiều hợp chất sulforaphane có khả năng ngăn ngừa ung thư, cùng lượng vitamin C cực cao giúp tăng đề kháng.</p>
+                    <span class="benefits">✨ Ngăn ngừa ung thư, tăng hệ miễn dịch</span>
+                </div>
+
+                <div class="veggie-item">
+                    <h3>3. Cà rốt</h3>
+                    <p>Rất giàu Beta-carotene (tiền chất của Vitamin A), giúp cải thiện thị lực và làm chậm quá trình lão hóa da.</p>
+                    <span class="benefits">✨ Bổ mắt, đẹp da</span>
+                </div>
+
+                <div class="veggie-item">
+                    <h3>4. Tỏi</h3>
+                    <p>Chứa chất allicin tự nhiên, hoạt động như một loại kháng sinh mạnh giúp cơ thể chống lại cảm cúm và giảm huyết áp.</p>
+                    <span class="benefits">✨ Kháng viêm, hạ huyết áp</span>
+                </div>
+
+                <div class="veggie-item">
+                    <h3>5. Cải xoăn (Kale)</h3>
+                    <p>Được mệnh danh là "vua của các loại rau xanh" với mật độ dinh dưỡng dày đặc, đặc biệt là vitamin K và chất xơ giảm cân.</p>
+                    <span class="benefits">✨ Giảm cholesterol, hỗ trợ giảm cân</span>
+                </div>
+
+                <div class="veggie-item">
+                    <h3>6. Khoai lang</h3>
+                    <p>Nguồn tinh bột tốt giàu chất xơ, vitamin B6, C và kali, giúp ổn định đường huyết tốt hơn khoai tây.</p>
+                    <span class="benefits">✨ Ổn định đường huyết, tốt cho hệ tiêu hóa</span>
+                </div>
+
+                <div class="veggie-item">
+                    <h3>7. Cà chua</h3>
+                    <p>Chứa hàm lượng Lycopene rất cao – một chất chống oxy hóa mạnh mẽ giúp bảo vệ tim mạch và làn da khỏi tác hại của tia UV.</p>
+                    <span class="benefits">✨ Bảo vệ tim mạch, chống lão hóa</span>
+                </div>
+
+                <div class="veggie-item">
+                    <h3>8. Ớt chuông</h3>
+                    <p>Đặc biệt là ớt chuông đỏ chứa lượng vitamin C gấp 3 lần một quả cam, hỗ trợ hấp thụ sắt rất tốt.</p>
+                    <span class="benefits">✨ Bổ sung Vitamin C, sáng da</span>
+                </div>
+
+                <div class="veggie-item">
+                    <h3>9. Măng tây</h3>
+                    <p>Nguồn cung cấp dồi dào folate (vitamin B9), cực kỳ quan trọng cho phụ nữ mang thai và sự phát triển của tế bào.</p>
+                    <span class="benefits">✨ Tốt cho bà bầu, giải độc gan</span>
+                </div>
+
+                <div class="veggie-item">
+                    <h3>10. Củ cải đường (Củ dền)</h3>
+                    <p>Chứa nhiều nitrat tự nhiên giúp làm giãn nở mạch máu, hạ huyết áp và tăng cường hiệu suất tập luyện thể thao.</p>
+                    <span class="benefits">✨ Tăng tuần hoàn máu, hạ huyết áp</span>
+                </div>
+
+                <div class="veggie-item">
+                    <h3>11. Bắp cải Brussels</h3>
+                    <p>Loại bắp cải tí hon này chứa kaempferol, một chất chống oxy hóa ngăn ngừa tổn thương tế bào hiệu quả.</p>
+                    <span class="benefits">✨ Thải độc cơ thể, bảo vệ tế bào</span>
+                </div>
+
+                <div class="veggie-item">
+                    <h3>12. Đậu hà lan</h3>
+                    <p>Dù là rau nhưng lại rất giàu protein thực vật và chất xơ, giúp bạn no lâu và nuôi dưỡng lợi khuẩn đường ruột.</p>
+                    <span class="benefits">✨ Cung cấp protein, tốt cho đường ruột</span>
+                </div>
+
+                <div class="veggie-item">
+                    <h3>13. Hành tây</h3>
+                    <p>Chứa nhiều quercetin giúp chống viêm, hạ đường huyết và cải thiện mật độ xương ở phụ nữ tiền mãn kinh.</p>
+                    <span class="benefits">✨ Chống viêm, bảo vệ xương</span>
+                </div>
+
+                <div class="veggie-item">
+                    <h3>14. Bí đỏ</h3>
+                    <p>Giàu lutein và zeaxanthin bảo vệ mắt khỏi đục thủy tinh thể, cùng lượng calo thấp lý tưởng cho thực đơn ăn kiêng.</p>
+                    <span class="benefits">✨ Giảm cân an toàn, tốt cho trí não</span>
+                </div>
+
+                <div class="veggie-item">
+                    <h3>15. Gừng</h3>
+                    <p>Chứa hợp chất gingerol có đặc tính chống viêm và chống oxy hóa mạnh, cực tốt để giảm chứng buồn nôn và đau cơ.</p>
+                    <span class="benefits">✨ Giảm đau, hỗ trợ tiêu hóa</span>
+                </div>
+
+            </div>
+        </main>
+
+        <aside>
+            <div class="sidebar-box">
+                <h4>Về Tác Giả</h4>
+                <p>Blog chia sẻ kiến thức dinh dưỡng lành mạnh, giúp bạn xây dựng lối sống xanh mỗi ngày từ những thực phẩm đơn giản nhất.</p>
+            </div>
+        </aside>
+
+    </div>
+</body>
+</html>

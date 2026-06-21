@@ -1,0 +1,247 @@
+
+.cart-icon {
+    position: relative; 
+    cursor: pointer;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.gio-hang-panel {
+    position: fixed;   
+    top: 0;
+    right: -420px;       
+    width: 400px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    transition: right 0.35s ease;
+}
+
+.gio-hang-panel.mo {
+    right: 0;
+}
+
+
+.gio-hang-tieu-de {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid #eee;
+    background-color: green;
+    color: white;
+}
+
+.gio-hang-tieu-de h2 {
+    font-size: 22px;
+    margin: 0;
+}
+
+.nut-dong {
+    font-size: 28px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    line-height: 1;
+}
+
+.nut-dong:hover {
+    opacity: 0.7;
+}
+
+.gio-hang-danh-sach {
+    flex: 1;             
+    overflow-y: auto;      
+    padding: 15px;
+}
+
+.gio-hang-trong {
+    text-align: center;
+    padding: 60px 20px;
+    color: #aaa;
+    font-size: 18px;
+}
+
+.gio-hang-trong span {
+    font-size: 60px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.san-pham-trong-gio {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+    animation: hienRa 0.3s ease;
+}
+
+@keyframes hienRa {
+    from { opacity: 0; transform: translateX(20px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+
+.sp-thong-tin {
+    flex: 1;
+}
+
+.sp-ten {
+    font-weight: bold;
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.sp-don-gia {
+    font-size: 13px;
+    color: #888;
+}
+
+.sp-so-luong {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sp-so-luong button {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #ddd;
+    background: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: green;
+    padding: 0;
+    height: 28px;
+}
+
+.sp-so-luong button:hover {
+    background-color: #f0f0f0;
+}
+
+.sp-so-luong span {
+    font-weight: bold;
+    min-width: 20px;
+    text-align: center;
+}
+
+
+.sp-thanh-tien {
+    font-weight: bold;
+    color: red;
+    font-size: 14px;
+    min-width: 80px;
+    text-align: right;
+}
+
+
+.sp-xoa {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #ccc;
+    padding: 0;
+    height: auto;
+}
+
+.sp-xoa:hover {
+    color: red;
+}
+
+.gio-hang-tong {
+    padding: 20px;
+    border-top: 2px solid #eee;
+    background-color: #fafafa;
+}
+
+.tong-tien-hang {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.tong-tien-hang span:last-child {
+    color: red;
+    font-size: 20px;
+}
+
+.nut-thanh-toan {
+    width: 100%;
+    padding: 16px;
+    background-color: green;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-bottom: 10px;
+}
+
+.nut-thanh-toan:hover {
+    background-color: darkgreen;
+    transform: scale(1.02);
+}
+
+.nut-xoa-het {
+    width: 100%;
+    padding: 12px;
+    background-color: white;
+    color: #e74c3c;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid #e74c3c;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.nut-xoa-het:hover {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.gio-hang-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+    display: none; 
+}
+
+.gio-hang-overlay.hien {
+    display: block;
+}
